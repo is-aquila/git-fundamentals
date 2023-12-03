@@ -9,3 +9,11 @@ code {
 h1, h2{
     font-family: 'Montserrat', sans-serif !important;
 }
+
+body {
+    background-color: #1a1a1a08 !important;
+}
+
+.navbar {
+    border-radius: 10px;
+}
