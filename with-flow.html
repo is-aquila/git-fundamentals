@@ -39,23 +39,7 @@
           </h2>
           <div id="collapseCommit" class="accordion-collapse collapse show" data-bs-parent="#Answers">
             <div class="accordion-body">
-              É a parte do processo que permite registrar as alterações de um repositório git em um histórico próprio, podendo, depois, ser enviado, através do comando "push", para um repositório remoto.<br>
-              <br>
-              <code>
-                git commit -m "<i>message</i>"
-              </code>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePush" aria-expanded="false" aria-controls="collapsePush">
-              Qual a diferença entre commit e push?
-            </button>
-          </h2>
-          <div id="collapsePush" class="accordion-collapse collapse" data-bs-parent="#Answers">
-            <div class="accordion-body">
-              O commit salva alterações localmente, enquanto o push envia essas alterações para o repositório remoto.<br>
+              É a parte do processo que permite registrar as alterações de um repositório git em um histórico próprio, devendo ser procedido pelo comando push para que as alterações sejam enviadas para o repositório remoto também.<br>
               <br>
               <code>
                 git commit -m "<i>message</i>"<br>
@@ -67,15 +51,16 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTag" aria-expanded="false" aria-controls="collapseTag">
-              O que é tag?
+              Tag
             </button>
           </h2>
           <div id="collapseTag" class="accordion-collapse collapse" data-bs-parent="#Answers">
             <div class="accordion-body">
-              É um identificador que serve de referência que referencia um ponto específico do histórico do repositório.<br>
+              É um identificador que serve de referência que referencia um ponto específico do histórico do repositório. O comando de criação da tag deve ser seguido de um push para que a modificação seja enviada para o repositório remoto.<br>
               <br>
               <code>
-                git commit tag <i>version_indicator</i>
+                git commit tag <i>version_indicator</i><br>
+                git push origin <i>branch_name</i>
               </code>
             </div>
           </div>
@@ -83,7 +68,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBranch" aria-expanded="false" aria-controls="collapseBranch">
-              O que é branch?
+              Branch
             </button>
           </h2>
           <div id="collapseBranch" class="accordion-collapse collapse" data-bs-parent="#Answers">
@@ -92,6 +77,7 @@
               <br>
               <code>
                 git branch <i>NewBrach</i>
+                git branch origin <i>NewBrach</i>
               </code>
             </div>
           </div>
@@ -99,7 +85,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConflicts" aria-expanded="false" aria-controls="collapseConflicts">
-              Como resolver possíveis conflitos no Git?
+              Conflitos no Git
             </button>
           </h2>
           <div id="collapseConflicts" class="accordion-collapse collapse" data-bs-parent="#Answers">
@@ -111,7 +97,7 @@
               <code>
                 git add <i>file_name</i><br>
                 git merge --continue<br>
-                git pull origin branch_name
+                git pull origin <i>branch_name</i>
               </code>
             </div>
           </div>
