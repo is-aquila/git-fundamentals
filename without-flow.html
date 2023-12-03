@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Git Sem Flow</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.css" rel="stylesheet">
+  <head>
+  <body>
+    <header>
+      <h1 class="text-center"><strong><a class="navbar-brand" href="#">Git Fundamentals</a></strong></h1>
+      <div class="col-12 d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <ul class="navbar-nav">
+              <li class="nav-item btn btn-light">
+                <a class="nav-link" href="/index.html">Comandos Git</a>
+              </li>
+              <li class="nav-item btn btn-light">
+                <a class="nav-link" href="/with-flow.html">Com Flow</a>
+              </li>
+              <li class="nav-item btn btn-light">
+                <a class="nav-link">Sem Flow</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container my-5">
+      <h2 class="text-center"><strong>Comandos Git e Respectivas Finalidades<br>Sem o Uso do Flow</strong></h2>
+      <div class="accordion" id="Answers">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCommit" aria-expanded="true" aria-controls="collapseCommit">
+              Commit
+            </button>
+          </h2>
+          <div id="collapseCommit" class="accordion-collapse collapse show" data-bs-parent="#Answers">
+            <div class="accordion-body">
+              É a parte do processo que permite registrar as alterações de um repositório git em um histórico próprio, podendo, depois, ser enviado, através do comando "push", para um repositório remoto.<br>
+              <br>
+              <code>
+                git commit -m "<i>message</i>"
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePush" aria-expanded="false" aria-controls="collapsePush">
+              Push
+            </button>
+          </h2>
+          <div id="collapsePush" class="accordion-collapse collapse" data-bs-parent="#Answers">
+            <div class="accordion-body">
+              Push envia essas alterações para o repositório remoto.<br>
+              <br>
+              <code>
+                git push origin <i>branch_name</i>
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTag" aria-expanded="false" aria-controls="collapseTag">
+              Tag
+            </button>
+          </h2>
+          <div id="collapseTag" class="accordion-collapse collapse" data-bs-parent="#Answers">
+            <div class="accordion-body">
+              É um identificador que serve de referência que referencia um ponto específico do histórico do repositório.<br>
+              <br>
+              <code>
+                git commit tag <i>version_indicator</i>
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBranch" aria-expanded="false" aria-controls="collapseBranch">
+              Branch
+            </button>
+          </h2>
+          <div id="collapseBranch" class="accordion-collapse collapse" data-bs-parent="#Answers">
+            <div class="accordion-body">
+              Branch é como uma ferramenta facilitadora para ramificação do repositório.<br>
+              <br>
+              <code>
+                git branch <i>NewBrach</i>
+              </code>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConflicts" aria-expanded="false" aria-controls="collapseConflicts">
+              Conflitos no Git
+            </button>
+          </h2>
+          <div id="collapseConflicts" class="accordion-collapse collapse" data-bs-parent="#Answers">
+            <div class="accordion-body">
+              Conflitos costumam ocorrer quando duas ou mais mudanças incompatíveis ocorrem no mesmo arquivo, não necessariamente ao mesmo tempo.<br>
+              Caso um conflito ocorra, deve-se abrir o arquivo conflitante, retirar as marcações de conflito e fazer as alterações necessárias.<br>
+              Resolvidos os conflitos, utiliza-se os seguites comandos:<br>
+              <br>
+              <code>
+                git add <i>file_name</i><br>
+                git merge --continue<br>
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.js"></script>
+  </body>
+</html>
